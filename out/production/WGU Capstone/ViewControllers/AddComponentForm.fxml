@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.AddComponentController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="613.0">
+         <children>
+            <Text layoutX="139.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Component" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="89.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="21.50927734375">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="89.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="43.50927734375">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="89.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" wrappingWidth="74.50927734375">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="IDTextField" editable="false" layoutX="200.0" layoutY="134.0" opacity="0.5" text="Auto Gen-Disabled" />
+            <TextField fx:id="NameTextField" layoutX="200.0" layoutY="174.0" />
+            <TextField fx:id="PriceTextField" layoutX="200.0" layoutY="217.0" />
+            <RadioButton fx:id="throughHoleRadioButton" layoutX="175.0" layoutY="98.0" mnemonicParsing="false" onAction="#throughHoleSelected" selected="true" text="Through Hole" />
+            <RadioButton fx:id="SMDRadioButton" layoutX="281.0" layoutY="98.0" mnemonicParsing="false" onAction="#SMDSelected" text="SMD" />
+            <ButtonBar layoutX="91.0" layoutY="398.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="SaveButton" mnemonicParsing="false" onAction="#savePart" text="Save" />
+                  <Button fx:id="CancelButton" layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+              </buttons>
+            </ButtonBar>
+            <Text layoutX="89.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name" visible="false" wrappingWidth="112.7451171875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="89.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="43.50927734375">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
